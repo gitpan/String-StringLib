@@ -49,38 +49,37 @@ print "ok 1\n";
 $t = 'asdf';
 for ($i = 0, $b = 2; $i <= $#a; $i++, $b++) {
     $_ = $a[$i];
-    &String::StringLib::StripLTSpace($_);
+    StripLTSpace($_);
     print $_ eq $t ? '' : 'not ',"ok $b\n";
 }
 $q = undef;
-&String::StringLib::StripLTSpace($q);
+StripLTSpace($q);
 print defined($q) ? 'not ' : '','ok ',$b++,"\n";
-
 
 for ($i = 0; $i <= $#b; $i++, $b++) {
     $_ = $b[$i];
-    &String::StringLib::StripSpace($_);
+    StripSpace($_);
     print $_ eq $t ? '' : 'not ',"ok $b\n";
 }
 $q = undef;
-&String::StringLib::StripSpace($q);
+StripSpace($q);
 print defined($q) ? 'not ' : '','ok ',$b++,"\n";
 
 for ($i = 0; $i <= $#L; $i++, $b++) {
     $_ = $L[$i];
-    &String::StringLib::StripLSpace($_);
+    StripLSpace($_);
     print $_ eq $t ? '' : 'not ',"ok $b\n";
 }
 $q = undef;
-&String::StringLib::StripLSpace($q);
+StripLSpace($q);
 print defined($q) ? 'not ' : '','ok ',$b++,"\n";
 
 for ($i = 0; $i <= $#T; $i++, $b++) {
     $_ = $T[$i];
-    &String::StringLib::StripTSpace($_);
+    StripTSpace($_);
     print $_ eq $t ? '' : 'not ',"ok $b\n";
 }
 $q = undef;
-&String::StringLib::StripTSpace($q);
+StripTSpace($q);
 print defined($q) ? 'not ' : '','ok ',$b++,"\n";
 
