@@ -1,6 +1,7 @@
 Changes
 MANIFEST
 Makefile.PL
+README
 StringLib.pm
 StringLib.xs
 test.pl
