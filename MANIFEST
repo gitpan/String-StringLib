@@ -1,0 +1,6 @@
+Changes
+MANIFEST
+Makefile.PL
+StringLib.pm
+StringLib.xs
+test.pl
